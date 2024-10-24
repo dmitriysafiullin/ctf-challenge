@@ -9,7 +9,7 @@
    - ![image](https://github.com/user-attachments/assets/06afea72-5ea9-4ca0-afe3-d954b0eef8eb)
 
 
-3. Solve all the challenges using the hints in the comments. Your goal is to deobfuscate the obfuscated_key file and send an authenticated API request to the endpoint. Remember to fill in your name and number.
+3. Solve all the challenges using the hints in the comments. Your goal is to deobfuscate the obfuscated_key file and pass it along to send an authenticated API request to the endpoint. Remember to fill in your name and number.
 
 4. If you think you have solved it, run the file using Python!
 
