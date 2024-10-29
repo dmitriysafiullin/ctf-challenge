@@ -29,11 +29,11 @@ def challenge_3(data):
         return data
 
 
-def send_it(name, number, api_key):
+def send_it(name, number, email, api_key):
     """If you've got it then fill in your name and phone number then send it!"""
     host = "demo.lime-crm.com"
     endpoint = "/ctf_challenge/api/v1/limeobject/winner/"
-    body = json.dumps({"name": name, "phone": number})
+    body = json.dumps({"name": name, "phone": number, "email": email})
     method = "POST"
 
     headers = {"x-api-key": api_key, "Content-Type": "application/json"}
@@ -66,9 +66,10 @@ if __name__ == "__main__":
 
     api_key = challenge_3(data_2)
 
-    # If you think you've got it then send it. Just fill in your name and number
+    # If you think you've got it then send it. Just remember to fill in the credentials (optional)
     send_it(
         "YOUR_NAME_HERE",
         "12345678",
+        "your_email@email.net",
         api_key,
     )
